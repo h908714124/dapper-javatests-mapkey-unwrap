@@ -24,13 +24,14 @@ javadoc {
 
 repositories {
     mavenCentral()
+    maven { url 'https://s01.oss.sonatype.org/content/repositories/iogithubjbock-java-1076' }
 }
 
 dependencies {
-//    def core = 'io.github.jbock-java:dapper:1.0'
-//    def compiler = 'io.github.jbock-java:dapper-compiler:1.0'
-    def core = 'com.google.dagger:dagger:2.37'
-    def compiler = 'com.google.dagger:dagger-compiler:2.37'
+    def core = 'io.github.jbock-java:dapper:1.0'
+    def compiler = 'io.github.jbock-java:dapper-compiler:1.1-staging-2'
+//    def core = 'com.google.dagger:dagger:2.37'
+//    def compiler = 'com.google.dagger:dagger-compiler:2.37'
     implementation(core)
     annotationProcessor(compiler)
     implementation('com.google.auto.value:auto-value-annotations:1.8.2')
